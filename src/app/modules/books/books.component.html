@@ -1,0 +1,10 @@
+<h1>Livros de JavaScript</h1>
+<app-book-card *ngFor="let book of (booksList$ | async)" [book]="book" (hello)="onHello($event)">
+</app-book-card>
+
+<!-- <ul>
+  <li *ngFor="let book of booksList$ | async">
+    {{book?.volumeInfo?.title}}
+
+  </li>
+</ul> -->
